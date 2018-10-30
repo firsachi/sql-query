@@ -1,0 +1,5 @@
+﻿ALTER SEQUENCE pzd_ids RESTART WITH 1;
+DELETE FROM pzd;
+INSERT INTO pzd (geom) SELECT geom FROM pzd_34;
+INSERT INTO pzd (geom) SELECT geom FROM pzd_36;
+INSERT INTO pzd (geom) SELECT geom FROM pzd_41;

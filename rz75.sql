@@ -1,0 +1,13 @@
+﻿ALTER SEQUENCE rz75_ids RESTART WITH 1;
+DELETE FROM rz75;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_24;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_29;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_30;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_31;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_33;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_35;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_38;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_40;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_42;
+INSERT INTO rz75 (geom,number_rz) SELECT geom,number_rz FROM rz75_44;
+SELECT COUNT(id) FROM rz75;
