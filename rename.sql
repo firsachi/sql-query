@@ -1,0 +1,2 @@
+﻿UPDATE rz20 SET name_rz = '02-' || lpad(btrim(to_char(id, '9999')), 4 ,'0') || '-004'  WHERE number_rz LIKE '%4' AND number_rz BETWEEN '01%' AND  '21%' ;
+UPDATE rz20 SET name_rz = '02-' || id || '-005'  WHERE number_rz LIKE '%5' AND number_rz BETWEEN '01%' AND  '21%' ;
